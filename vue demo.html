@@ -1,0 +1,34 @@
+
+<html>
+    <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">      
+    <link rel="stylesheet" type="text/css" href="vue demo.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    
+   
+</head> 
+<body style="width: 100%; overflow-wrap: break-word;background:#fff">
+        <div id='lastBall'>
+            <div v-text="gameRule"></div>
+            <template v-for="item in balls">
+                <div class="ball" v-text="item.number"></div>
+            </template>            
+        </div>
+        <div id="player1">
+                <div v-text="name"></div>
+                <template v-for="item in handelBalls">
+                    <div class="ball" v-text="item.number"></div>
+                </template>
+        </div>
+        <div id="player2">
+                <div v-text="name"></div>
+                <template v-for="item in handelBalls">
+                    <div class="ball" v-text="item.number"></div>
+                </template>
+        </div>
+</body>
+
+<script type="text/javascript" src="lastBall.js"></script>
+
+</html>
